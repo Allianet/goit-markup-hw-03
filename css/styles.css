@@ -107,33 +107,43 @@ p {
   margin-right: 50px;
 }
 .header-contacts-link {
-  color: var(--main-text-color);
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--main-text-color);
+  display: block;
 }
+
 /*Шапка*/
 .hero {
-  background-color: var(--second-background-color);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-color: var(--second-background-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-text-color);
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-btn {
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -142,11 +152,6 @@ p {
   color: var(--second-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  padding: 10px 32px;
-  min-width: 200px;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -182,12 +187,13 @@ p {
   margin-right: 0;
 }
 .features-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px; /*задаем т.к заголовок*/
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .features-text {
@@ -199,13 +205,15 @@ p {
   display: flex;
 }
 .about-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
 }
+
 .about-item {
   margin-right: 30px;
 }
@@ -224,12 +232,13 @@ img {
 }
 
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
@@ -242,21 +251,25 @@ img {
   margin-right: 0;
 }
 .team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
+
 .team-text {
+  padding-bottom: 30px;
+  text-align: center;
+
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
-  text-align: center;
-  padding-bottom: 30px;
 }
+
 /*Портфолио*/
 
 .filters {
@@ -269,6 +282,12 @@ img {
 }
 
 .filters-btn {
+  min-width: 73px;
+  padding: 6px 22px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -276,11 +295,6 @@ img {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
-  min-width: 73px;
-  padding: 6px 22px;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -301,12 +315,12 @@ img {
   border-top: none;
 }
 .projects-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-bottom: 4px;
 }
 .projects-text {
   font-size: 16px;
@@ -316,9 +330,9 @@ img {
 
 /*Подвал*/
 .footer {
-  background-color: var(--second-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--second-background-color);
 }
 .logo-clear {
   color: var(--second-text-color);
