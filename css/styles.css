@@ -118,6 +118,7 @@ p {
 }
 
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,6 +126,8 @@ p {
   text-transform: uppercase;
   color: var(--second-text-color);
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -164,6 +167,17 @@ p {
 .features {
   padding-bottom: 0;
 }
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-item {
+  width: 270px;
+  margin-right: 30px;
+}
+.features-item:nth-child(4n) {
+  margin-right: 0;
+}
 .features-title {
   font-weight: 700;
   font-size: 14px; /*задаем т.к заголовок*/
@@ -178,6 +192,9 @@ p {
 }
 
 /*Чем мы занимаемся*/
+.about-list {
+  display: flex;
+}
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -186,11 +203,23 @@ p {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
+.about-item {
+  margin-right: 30px;
+}
+.about-item:nth-child(3n) {
+  margin-right: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} /*убирает нижний зазор картинки - строчного элемента*/
 
 /*Команда*/
 .team {
   background-color: #f5f4fa;
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -199,17 +228,30 @@ p {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
+.team-list {
+  display: flex;
+}
+.team-item {
+  margin-right: 30px;
+  background-color: var(--second-text-color);
+}
+.team-item:nth-child(4n) {
+  margin-right: 0;
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
+  text-align: center;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
+  text-align: center;
   padding-bottom: 30px;
 }
 /*Портфолио*/
@@ -252,7 +294,11 @@ p {
   color: var(--second-text-color);
 }
 .footer-adress {
+  margin-top: 20px;
   font-style: normal;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-link-adress {
   color: var(--second-text-color);
