@@ -29,7 +29,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 /* *,
@@ -51,10 +50,14 @@ p {
 }
 
 /*Верхняя линия*/
+.border {
+  border-bottom: 1px solid #ececec;
+}
 .top-line {
   display: flex;
   align-items: center;
 }
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -256,6 +259,15 @@ img {
 }
 /*Портфолио*/
 
+.filters {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filters-btn {
   font-family: inherit;
   font-weight: 500;
@@ -264,19 +276,37 @@ img {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
+  min-width: 73px;
+  padding: 6px 22px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--second-text-color);
   background-color: var(--accent-color);
 }
-
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.projects-item {
+  margin: 15px;
+}
+.desc {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .projects-text {
   font-size: 16px;
