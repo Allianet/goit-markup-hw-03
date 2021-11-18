@@ -15,7 +15,7 @@ body {
   color: var(--title-text-color);
 }
 
-.list {
+ul {
   list-style: none; /*убирает точки в списке*/
   padding: 0;
   margin: 0;
@@ -68,9 +68,11 @@ p {
 .logo-dark {
   color: #000000;
 }
+.navigation {
+  margin-left: 93px;
+}
 .header-list {
   display: flex;
-  margin-left: 93px;
 }
 .header-item {
   font-weight: 500;
@@ -250,8 +252,11 @@ img {
 .team-item:nth-child(4n) {
   margin-right: 0;
 }
-.team-subtitle {
+.member {
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+.team-subtitle {
   margin-bottom: 10px;
   text-align: center;
 
@@ -262,7 +267,6 @@ img {
 }
 
 .team-text {
-  padding-bottom: 30px;
   text-align: center;
 
   font-size: 16px;
